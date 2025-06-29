@@ -30,7 +30,7 @@ if uploaded_file is not None:
         mp_face = mp.solutions.face_detection
         mp_drawing = mp.solutions.drawing_utils
 
-        with mp_hands.Hands(static_image_mode=True, max_num_hands=10, min_detection_confidence=0.7) as hands, \
+        with mp_hands.Hands(static_image_mode=True, max_num_hands=10, min_detection_confidence=0.5) as hands, \
              mp_face.FaceDetection(model_selection=1, min_detection_confidence=0.7) as face:
 
             # Detect hands
