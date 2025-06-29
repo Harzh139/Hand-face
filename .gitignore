@@ -1,0 +1,33 @@
+# =============== PYTHON ===============
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+mp_env/
+
+# =============== ENV & SECRETS ===============
+.env
+*.env
+.streamlit/secrets.toml
+
+# =============== OS FILES ===============
+.DS_Store
+Thumbs.db
+
+# =============== TEMP FILES ===============
+*.log
+*.bak
+*.tmp
+*.swp
+*.old
+*~
+
+# =============== IMAGES/OUTPUTS ===============
+*.jpg
+*.jpeg
+*.png
+face_hand_output.jpg
+output_detection.jpg
