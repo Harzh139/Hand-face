@@ -1,21 +1,29 @@
-# 🧠 Face & Hand Segmentation Project
+# 🧠 Face & Hand Detection with MediaPipe + Replicate SAM2
 
-This project automatically detects **faces and hands** using **YOLOv8** and segments them with **SAM2 (Segment Anything Model)** via the **Replicate API**. It's built with Python, OpenCV, MediaPipe, and Streamlit for interactive UI.
+An interactive **Streamlit web app** that performs **face and hand detection** using **MediaPipe** and allows advanced segmentation with **SAM2** (Segment Anything Model) via the **Replicate API**.
 
 ---
 
 ## 🚀 How It Works
 
-1. 🟨 **YOLOv8** detects bounding boxes for faces and hands
-2. 🧠 **SAM2 (Segment Anything Model)** receives the boxes to perform pixel-wise segmentation
-3. 🖼️ Segmentation masks are overlayed on the original image and displayed
-4. 💻 A **Streamlit UI** allows users to upload images and get downloadable results
+1. Upload an image using the Streamlit interface
+2. MediaPipe detects:
+   - Faces (bounding boxes)
+   - Hands (landmarks)
+3. (Optional) Detected face/hand regions are sent to **Replicate SAM2** for segmentation
+4. Results are displayed and downloadable!
 
 ---
 
-## 🛠 Requirements
+## 💻 Demo
 
-Install all dependencies using:
+> (Add screenshot or deployment link here)
+
+---
+
+## 📦 Requirements
+
+Install all required packages:
 
 ```bash
 pip install -r requirements.txt
