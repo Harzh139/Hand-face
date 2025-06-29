@@ -1,6 +1,5 @@
 streamlit
 opencv-python
-mediapipe
 numpy
-python-dotenv
 replicate
+python-dotenv
